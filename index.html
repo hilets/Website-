@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+  <style>
+      
+      *{
+  margin-left:1px;
+  color:white;
+  margin:0;
+  text-decoration:none;
+  box-sizing: border-box;
+font-family: 'poppins', sans-serif;
+}
+body{
+  background-color:#081b29;
+}
+header{
+  background-color: #081429;
+  
+  height:60px;
+  width: 100%;
+  display:inline-block;
+  justify-content :space-between;
+  position:fixed;
+  color:white;
+  z-index: 100; 
+}
+#logo{
+  position:fixed;
+  top:12px;
+  left:13px;
+  font-size:30px;
+  color:#fff;
+  font-weight:bold;
+  cursor:default;
+  opacity:0;
+  animation:slideright 1s ease forwards;
+margin-left:20px;
+  margin-right: 100px;
+  height:40px;
+  width: 100%;
+
+}
+#fli{
+  color:red;
+}
+#element{
+  color:cyan;
+}
+header span{
+  position:fixed;
+  top:16px;
+  right:15px;
+}
+
+span a{
+
+  margin-right:7px;
+align-items:center;
+  display:inline-block;
+  font-size:13px;
+  font-weight:500;
+  transition:.3s;
+  opacity:0;
+  animation:slidetop .5s ease forwards;
+  padding:7px 0;
+  text-shadow: 0 0 20px cyan;
+  
+}
+span a:active{
+  
+  border-bottom:5px solid #0ef;
+  border-radius: 10px;
+  
+}
+
+.home {
+position: relative;
+  top:60px;
+width: 100%;
+justify-content: space-between;
+height: 130vh;
+background-image: url('all.png');
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+padding: 70px 10% 0;
+}
+.home-content {
+max-width: 600px;
+}
+
+main h3 {
+font-size: 32px;
+font-weight: 700;
+    transition:.3s;
+  opacity:0;
+  animation:slidetop .5s ease forwards;
+  /*animation*/
+}
+
+
+main h1 {
+font-size: 56px;
+font-weight: 700;
+margin: -3px 0;
+  /*animation*/
+
+    transition: .5s ease;
+  opacity:0;
+  animation:slideleft 1s ease forwards;
+  animation-delay: calc(.2s*var)
+}
+
+main p{
+font-size: 20px;
+  opacity:0;
+  animation:slideright 1s ease forwards;
+  animation-delay: calc(.2s*var);
+  /*animation*/
+}
+.home-sci svg {
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background: transparent;
+border: 2px solid #0ef;
+box-shadow: 0 0 20px cyan ;
+border-radius: 50%;
+font-size: 20px;
+text-decoration: none;
+  transition: .5s ease;
+  opacity:0;
+  animation:slideleft 1s ease forwards;
+  animation-delay: calc(.2s*var);
+  
+margin-left:10px;
+  margin-top:15px;
+  
+  
+}
+
+.home-sci svg:active {
+  height: 38px;
+width: 38px;
+  background-color:white;
+color: cyan;
+box-shadow: 0 0 40px #0ef;
+}
+
+
+.btn-box{
+display: inline-block;
+padding: 12px 28px;
+background:#0ef;
+  box-shadow: 0 0 40px cyan;
+border-radius: 40px;
+font-size: 16px;
+color: #081b29;
+letter-spacing: 1px;
+text-decoration: none;
+font-weight: 600;
+  margin-top:15px;
+  opacity:0;
+  animation:slidetop 1s ease forwards;
+  animation-delay:2s;
+}
+
+
+/*header*/
+ @keyframes slideright{
+   0%{
+     transform: translateX(-100px);
+     opacity:0;
+   }
+   100%{
+     transform: translateX(0px);
+     opacity:1;
+   }
+   
+ }
+  @keyframes slidetop{
+   0%{
+     transform: translateY(-100px);
+     opacity:0;
+   }
+   100%{
+     transform: translateY(0px);
+     opacity:1;
+   } 
+ }
+
+@keyframes slidebottom{
+   0%{
+     transform: translateY(-100px);
+     opacity:0;
+   }
+   100%{
+     transform: translateY(0px);
+     opacity:1;
+   } 
+ }
+
+@keyframes slideleft{
+   0%{
+     transform: translateX(100px);
+     opacity:0;
+   }
+   100%{
+     transform: translateX(0px);
+     opacity:1;
+   }
+}
+
+
+
+.about{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+align-items: center;
+gap: 1.5rem;
+
+}
+
+.about-img {
+  margin-top:20px;
+padding-bottom: 20%;
+max-width: 630px;
+height: auto;
+width: 100%;
+  
+border-radius: 8px;
+  
+}
+
+about-text h2{
+font-size: 60px;
+}
+
+#c{
+color:#0ef;
+}
+#big{
+  
+  margin-left:130px;
+  margin-bottom:2px;
+  font-size:40px;
+  font-weight:600;
+ 
+}
+
+
+#x{
+  
+font-size: 29px;
+font-weight: 600;
+color: #fff;
+line-height: 1.7;
+margin-left:45px;
+}
+
+#v{
+  margin-left:35px;
+color: aliceblue;
+font-size: 20px;
+line-height: 1.4;
+margin-bottom: 4rem;
+}
+#under{
+  height:5px;
+  width:108px;
+  background-color:#0ef;
+  box-shadow:0 0 5px #0ef,
+    0 0 15px #0ef,
+    0 0 30px #0ef;
+  margin-left:130px;
+  border:0px;
+  border-radius:1px;
+  margin-bottom:30px;
+}
+#under-me{
+  height:5px;
+  width:55px;
+  background-color:#fff;
+  box-shadow:0 0 5px white,
+    0 0 15px white,
+    0 0 30px white;
+  margin-left:119px;
+  border:0px;
+  border-radius:1px;
+}
+#o{
+ text-shadow:1px 1px 20px #122990f7,
+    1px 1px 40px #0053b8f7;
+}
+#service{
+
+  color:aliceblue;
+  font-size:20px;
+  line-height:1.4;
+  margin-bottom:4rem;
+}
+.sub-title{
+  text-align:center;
+  font-size:40px;
+  padding-bottom:70px;
+  
+}
+.sub-title span{
+  color:#0ef;
+
+}
+.container{
+  padding:90px;
+}
+.services-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(259px,1fr));
+  grid-gap:40px;
+  margin-top:50px;
+}
+.services-list div{
+  background-color:transparent;
+  padding:40px;
+  font-size:13px;
+  font-weight:13px;
+  border-right:10px;
+  border-radius:20px;
+  transition:background 0.5s,transform 0.5s;
+  box-shadow:1px 1px 20px #122990f7,
+    1px 1px 40px #0053b8f7;
+
+}
+.services-list div i{
+  font-size:50px;
+  margin-bottom:30px;
+}
+
+.services-list div h2{
+  font-size:30px;
+  font-weight:500;
+  margin-bottom:15px;
+  
+}
+
+.services-list div a{
+  text-decoration:none;
+  color:#000000;
+  font-size:12px;
+  margin-top:20px;
+  display:inline-block;
+}
+.read{
+  display:inline-block;
+  padding:12px 28px;
+  background:#0ef;
+  border-radius:40px;
+  font-size:16px;
+color:#081b29;
+  letter-spacing:1px;
+  text-decoration:none;
+  font-weight:600;
+  opacity:0;
+  animation:slidetop 1s ease forwards;
+  animation-delay:2s;
+  box-shadow:0 0 5px #0ef,
+    0 0 25px #0ef; 
+  
+    }
+.read:hover{
+box-shadow:0 0 5px cyan,
+  0 0 25px cyan,
+  0 0 50px cyan,
+  0 0 100px cyan,
+  0 0 200 px cyan;
+  
+}
+.services-list div:hover{
+  transform:translateY(-15px);
+}
+
+
+
+
+
+
+/*skilllllllllllllllllllllllllllllll)llll*/
+section{
+  display:flex;
+  flex-wrap:warp;
+}
+.container1{
+  width:100%;
+  height:500px;
+  padding:75px 90px;
+  margin-left:0px;
+} 
+.heading1{
+  text-align:center;
+  text-decoration :underline;
+  text-underline-offset:10px;
+  text-decoration-thickness:5px;
+  margin-bottom:50px;
+  
+}
+.bar{
+  font-size:23px;
+  
+}
+.Technical-bars .bar{
+  margin-top:30px;
+}
+.Technical-bars .bar:first-child{
+  margin-top: 0;
+}
+.Technical-bars .bar:last-child{
+  margin-bottom:0;
+}
+
+.Technical-bars .bar .info span{
+  font-size:20px;
+  font-weight:500;
+ 
+}
+
+.Technical-bars .bar .progress-line {
+position:relative;
+  border-radius:10px;
+  width:100%;
+  height:5px;
+  background-color:#000;
+  
+}
+.bar .progress-line span{
+  height:100%;
+  background-color:cyan;
+  position:absolute;
+  border-radius:10px;
+    
+}
+
+.progress-line.html span{
+  width:90%;
+  opacity:0;
+  animation:slideright 0.5s ease forwards;
+  animation-delay:2s;
+  /*animation*/
+}
+.progress-line.css span{
+  width:60%;
+  opacity:0;
+  animation:slideright 0.5s ease forwards;
+  animation-delay:2.1s;
+  /*animation*/
+}
+.progress-line.javascript span{
+  width:85%;
+  opacity:0;
+  animation:slideright 0.5s ease forwards;
+  animation-delay:2.2s;
+  /*animation*/
+}
+.progress-line.ff span{
+  width:90%;
+  margin-bottom:100px;
+  opacity:0;
+  animation:slideright 0.5s ease forwards;
+  animation-delay:2.3s;
+  /*animation*/ 
+}
+.progress-line.bm span{
+  width:85%;
+  margin-bottom:100px;
+  opacity:0;
+  animation:slideright 0.5s ease forwards;
+  animation-delay:2.3s;
+  /*animation*/ 
+}
+
+.progress-line.fb span{
+  width:80%;
+  margin-bottom:100px;
+  opacity:0;
+  animation:slideright 0.5s ease forwards;
+  animation-delay:2.3s;
+  /*animation*/ 
+}
+.progress-line.ch span{
+  width:100%;
+  margin-bottom:100px;
+  opacity:0;
+  animation:slideright 0.5s ease forwards;
+  animation-delay:2.3s;
+  /*animation*/ 
+}
+.progress-line.ck span{
+  width:35%;
+  margin-bottom:100px;
+  opacity:0;
+  animation:slideright 0.5s ease forwards;
+  animation-delay:2.3s;
+  /*animation*/ 
+}
+.progress-line.fight span{
+  width:70%;
+  margin-bottom:100px;
+  opacity:0;
+  animation:slideright 0.5s ease forwards;
+  animation-delay:2.3s;
+  /*animation*/ 
+}
+.progress-line.math span{
+  width:90%;
+  margin-bottom:100px;
+  opacity:0;
+  animation:slideright 0.5s ease forwards;
+  animation-delay:2.3s;
+  /*animation*/ 
+}
+.progress-line.science  span{
+  width:95%;
+  margin-bottom:100px;
+  opacity:0;
+  animation:slideright 0.5s ease forwards;
+  animation-delay:2.3s;
+  /*animation*/ 
+}
+.progress-line.ict  span{
+  width:100%;
+  margin-bottom:100px;
+  opacity:0;
+  animation:slideright 0.5s ease forwards;
+  animation-delay:2.3s;
+  /*animation*/ 
+}
+.progress-line.other  span{
+  width:100%;
+  margin-bottom:100px;
+  opacity:0;
+  animation:slideright 0.5s ease forwards;
+  animation-delay:2.3s;
+  /*animation*/ 
+}
+
+
+#html{
+  margin-left:230px;
+}
+
+#css{
+margin-left:148px;
+}
+#js{
+  margin-left:213px;
+}
+  #react{
+    font-size:27px;
+    margin-left:192px;
+  }
+#ch{
+  color:red;
+  margin-left:230px;
+}
+#ck{
+  margin-left:80px;
+}
+#fb{
+  margin-left:204px;
+   }
+#ff{
+  margin-left:230px;
+}
+#fight{
+  margin-left:174px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container1{
+  position: relative;
+  bottom:1px;
+}
+
+.radial-bars{
+width:100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: flex-start;
+}
+.radial-bars .radial-bar{
+  width:50%;
+  height:170px;
+  margin-bottom:10px;
+  position:relative;
+
+}
+
+.radial-bars .radial-bar svg{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) rotade(-90deg);
+  width:120px;
+  height:160px;
+  
+}
+
+.radial-bars .radial-bar .progress-bar{
+  stroke-width:10;
+  stop-color:black;
+  fill:transparent;
+  stroke-dasharray:502;
+  stroke-dashoffset:502;
+  stroke-linecap:round;
+
+}
+
+.path-bar-1{
+  stroke-width:10;
+  stroke:#0ef;
+ fill:transparent;
+  stroke-dasharray:502;
+  stroke-dashoffset:502;
+  stroke-linecap:round;
+
+}
+.path-bar-1{animation: animate-path1 1s 1s linear forwards;}
+
+
+@keyframes animate-path1{
+100%{
+stroke-dashoffset: 50;;
+}
+}
+.percentage{
+  margin-left:19px;
+}
+.pract-heading{
+  text-align:center;
+  text-decoration :underline;
+  text-underline-offset:10px;
+  text-decoration-thickness:5px;
+  margin-bottom:50px;;
+}
+#asd{
+  margin-bottom:50px;
+  
+}
+#math{
+margin-left:84%;
+
+}
+#science{
+  margin-left:89%;
+}
+#ict{
+  color:red;
+  margin-left:85%;
+}
+#other{
+margin-left:68%;
+}
+
+
+#ggg{
+  height: 100vh;
+width: 100%;
+
+
+}
+#aaa{
+  height: 100vh;
+width: 100%;
+}
+
+
+
+
+
+.contact{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+align-items: center;
+gap: 3rem;
+padding-left: 30px;
+margin-top: 130px;
+}
+
+.contact-text h2{
+font-size: 90px;
+line-height: 1;
+text-align: center;
+margin-left:40px
+  
+}
+
+.contact-text h2 span{
+color:#0ef;
+}
+
+.contact-text h4{
+margin: 15px 0;
+color:rgb(228,228,228);
+font-size: 20px;
+font-weight: 600;
+}
+
+contact-text p{
+color: rgb(177, 177, 177);
+font-size: 20px;
+line-height: 30px;
+margin-bottom: 2rem;
+}
+
+.contact-list {
+margin-bottom: 3rem;
+}
+
+.contact-list li{
+margin-bottom: 10px;
+display: block;
+
+}
+
+.contact-list li{
+margin-bottom: 10px;
+display: block;
+}
+
+.contact-list i{
+display: inline-block;
+color: #0ef;
+font-size: 20px;
+font-weight: 600;
+transition: all .4s ease;
+}
+
+.contact-list li a:hover{
+transform: scale(1.01) translateY(-5px);
+color: #0ef;
+
+}
+
+.contact-icons i{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background: transparent;
+border: 2px solid #0ef;
+border-radius: 50%;
+font-size: 20px;
+color:#0ef;
+text-decoration: none;
+margin: 30px 15px 30px 0;
+transition: .5s ease;
+opacity: 0;
+animation: slideLeft 15 ease forwards;
+animation-delay: calc(.25 * var(--i));
+}
+
+.contact-icons i:hover{
+background:#0ef;
+color: #000;
+box-shadow: 0 0 20px #0ef;
+}
+
+.contact-form form{
+position: relative;
+}
+.contact-form form input, form textarea{
+border: none;
+outline: none;
+width: 90%;
+padding: 18px;
+background: #555557;
+color: #000;
+font-size: 1rem;
+font-weight: 600;
+margin-bottom: 0.5rem;
+border-radius: 0.5rem;
+}
+.contact-form textarea{
+resize: none;
+height: 220px;
+}
+
+
+.send{
+display: inline-block;
+padding: 14px 60px;
+background:#0ef;
+border-radius: 40px;
+font-size: 16px;
+color: #681b29;
+letter-spacing: 1px;
+text-decoration: none;
+font-weight: 600;
+opacity: 0;
+animation: slideTop 1s ease forwards;
+animation-delay: 2s;
+box-shadow: 0 0 5px #0ef,
+0025px #0ef;
+}
+.contact-form form.send:hover {
+
+box-shadow: 0 0 5px cyan, 0 0 25px cyan, 00 50px 0 0 100px cyan, cyan, 0 0 200px cyan;}
+
+.ttt{
+  height: 200px;
+width: 100%;
+
+ 
+}
+.last-page i{
+  display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background: transparent;
+border: 2px solid #0ef;
+box-shadow: 0 0 20px cyan ;
+border-radius: 50%;
+font-size: 20px;
+text-decoration: none;
+  transition: .5s ease;
+  opacity:0;
+  animation:slideleft 1s ease forwards;
+  animation-delay: calc(.2s*var);
+  cursor: pointer;
+  color:#0ef;
+margin-left:10px;
+  margin-top:15px;
+}
+.last-page i:active{
+  width: 38px;
+height: 38px;
+  background-color:#0ef;
+  color:#081b29;
+  box-shadow:0 0 20px #122990f7, 
+    0 0 40px #122990f7,
+    0 0 70px #122990f7;
+  
+}
+.last-page i:hover{
+  width: 38px;
+height: 38px;
+  background-color:#0ef;
+  color:#081b29;
+  box-shadow:0 0 20px cyan, 
+    0 0 40px cyan,
+    0 0 70px cyan;
+}
+.btn-last{
+  
+  display: inline-block;
+padding: 12px 28px;
+background:#0ef;
+  box-shadow: 0 0 40px cyan;
+border-radius: 40px;
+font-size: 16px;
+color: #081b29;
+letter-spacing: 1px;
+text-decoration: none;
+font-weight: 600;
+  margin-top:15px;
+  opacity:0;
+  animation:slidetop 1s ease forwards;
+  animation-delay:2s;
+  margin-left:100px;
+  
+}
+.btn-last:active{
+  background-color:#122990f7;
+  color:white;
+  box-shadow:0 0 20px #122990f7, 
+    0 0 40px #122990f7,
+    0 0 70px #122990f7;
+  
+}
+.btn-last:hover{
+  background-color:cyan;
+  color:#081b29;
+  box-shadow:0 0 20px #122990f7, 
+    0 0 40px #122990f7,
+    0 0 70px #122990f7;
+  
+}
+      
+      
+      
+    
+  </style>
+  <script src="script.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   
+
+ <header/>
+<div id="logo">Port<b id="fli" >folio.</b>
+</div>
+  
+     <span clasd="lkj">
+        
+     
+     
+<a href="#home" class="l">home</a> 
+<a href="#about">about</a>
+<a href="#Skills">skills</a>
+ <a href="#services">services</a>  
+<a href="#">contact </a>
+
+ </span>
+</header>
+<main class="home" id="home">
+  <div class="home-contain">
+ <h3>hallo, It's me</h3>
+<h1>
+   Jarif
+</h1>
+  <h3 id="anm">And I am a
+    <span id="element"></span></h3>
+  
+    
+<p>
+  Self-directed and enthusiastic technology consultant experienced working with several successfully funded start-ups and many more...
+
+</p>
+        <!--Facebook,Instagram, whatsapp-->
+    <div class="home-sci" id="fbimg"> 
+      <!--facebook-->
+
+   
+   
+
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #0ef;transform: ;msFilter:;"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg> 
+      <!--instagram-->
+      
+      <svg 
+xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #0ef;transform: ;msFilter:;"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+          <!--whatsapp-->
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #0ef;transform: ;msFilter:;"><path d="M12.043 6.925a4.985 4.985 0 0 0-4.98 4.979c-.001.94.263 1.856.761 2.649l.118.188-.503 1.837 1.885-.494.181.108a4.97 4.97 0 0 0 2.535.693h.001a4.986 4.986 0 0 0 4.979-4.978 4.946 4.946 0 0 0-1.456-3.522 4.946 4.946 0 0 0-3.521-1.46zm2.928 7.118c-.125.35-.723.668-1.01.711a2.044 2.044 0 0 1-.943-.059 8.51 8.51 0 0 1-.853-.315c-1.502-.648-2.482-2.159-2.558-2.26-.074-.1-.61-.812-.61-1.548 0-.737.386-1.099.523-1.249a.552.552 0 0 1 .4-.186c.1 0 .199.001.287.005.092.004.215-.035.336.257.125.3.425 1.036.462 1.111.037.074.062.162.013.262-.05.101-.074.162-.15.25-.074.088-.157.195-.224.263-.075.074-.153.155-.066.305.088.149.388.64.832 1.037.572.51 1.055.667 1.204.743.15.074.237.063.325-.038.087-.101.374-.437.474-.586.1-.15.199-.125.337-.076.137.051.873.412 1.022.487.148.074.249.112.287.175.036.062.036.361-.088.711z"></path><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-7.96 14.896h-.002a5.98 5.98 0 0 1-2.862-.729L6 18l.85-3.104a5.991 5.991 0 0 1 5.19-8.983 5.95 5.95 0 0 1 4.238 1.757 5.95 5.95 0 0 1 1.751 4.237 5.998 5.998 0 0 1-5.989 5.989z"></path></svg>
+    </div>
+
+    <a href="#" class="btn-box">More about me</a>  
+  </div>
+  
+</main>
+
+  <section class="about" id="about">
+     
+<!--2nd page img-->
+<div class="about-img">
+   <img src="jr.png" />
+<div class="about-text">
+  
+  </div>
+  <h2 id="big">
+About <span id="c">me</span>
+</h2>
+  <div id="under">
+    <div id="under-me"></div>
+  </div>
+  
+<h4 id="x">
+   I am a <span id="o">Full Stack Developer.</span>
+</h4>
+  <p id="v">
+     <!--about me-->
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. illum nulla ea laboriosam delectus quis? Tenetur Lorem ipsum dolor sit amet consectetur adipisicing elit. illum nulla ea laboriosam delectus quis? Tenetur pariaLorem ipsum dolor sit amet consectetur adipisicing elit. illum nulla ea laboriosam delectus quis? Tenetur Lorem ipsum dolor sit amet consectetur adipisicing elit. illum nulla ea laboriosam delectus quis? Tenetur paria.......
+  </p>
+  <a href="#" class="btn-box">More about me</a>  
+</div>
+   
+  </section>
+  <!---service-->
+  <section>
+<div class="services" id="services">
+
+<div class="container">
+
+<h1 class="sub-title">My <span>Services</span></h1>
+
+<div class="services-list">
+
+<div>
+
+<i class='bx bx-code' style="color:#00eeff"></i> 
+
+
+<h2>UI/UX Design</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. illum nulla ea laboriosam delectus quis? Tenetur paria <a href="#" class="read">learn more</a>
+
+</div>
+
+<div>
+  <i class='bx bx-crop' style="color: #00eeff" ></i> 
+
+<h2>UI/UX Design</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. illum nulla ea laboriosam delectus quis? Tenetur paria <a href="#" class="read">learn more</a>
+
+</div>
+
+<div>
+
+<i class='bx bxl-apple' style="color: #00eeff"></i>
+
+<h2>UI/UX Design</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. illum nulla ea laboriosam delectus quis? Tenetur paria <a href="#" class="read">learn more...</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+  <hr />
+  
+<!--3rd section-->
+
+  </section>
+<!--html css js....logo-->
+  <!--skill-->
+
+<div class="container1" id="Skills">
+
+<h1 class="heading1">Technical Skills</h1>
+
+<div class="Technical-bars">
+
+<div class="bar">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:  #c95d2e;transform: ;msFilter:;"><path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"></path></svg>
+  
+
+<div class="info">
+<span>HTML</span>
+  <div class="g"> 
+  </div>
+</div>
+<div id="html">90%</div>
+<div class="progress-line html">
+<span></span>
+</div>
+</div> 
+  
+  <!--same-->
+  <div class="bar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:  #147bbc;transform: ;msFilter:;"><path d="M4.192 3.143h15.615l-1.42 16.034-6.404 1.812-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.603-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137.905-9.923z"></path></svg>
+
+<div class="info">
+
+<span>Css</span>
+
+</div>
+<div id="css">65%</div>
+<div class="progress-line css">
+
+<span></span>
+
+</div>
+
+</div> 
+  <!--same-->
+  <div class="bar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #b0bc1e;transform: ;msFilter:;"><path d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z"></path></svg>
+
+<div class="info">
+
+<span>Javascript</span>
+
+</div>
+<div id="js">85%</div>
+<div class="progress-line javascript">
+
+<span></span>
+
+</div>
+
+</div> 
+<!--same-->
+<div class="bar">
+
+<div class="info">
+
+
+
+</div>
+
+  <!--xndndndbbdbdbdbsjsjsksksbdb-->
+  
+
+
+</div>
+
+</div> 
+
+</div>
+
+</div>
+
+<!--circle-->
+
+  <div class="container1">
+
+
+<div class="radial-bars">
+  <div class="redial-bar">
+<svg x="0px" y="0px" viewBox="0 0 200 200">
+<circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+  <circle class="path-bar-1" cx="100" cy="100" r="80"></circle></svg>
+   
+
+<div class="percentage">95%</div>
+<div class="text">Analysis </div>
+</div>
+
+  
+  <div class="redial-bar">
+<svg x="0px" y="0px" viewBox="0 0 200 200">
+<circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+  <circle class="path-bar-1" cx="100" cy="100" r="80"></circle></svg>
+   
+
+<div class="percentage">90%</div>
+<div class="text">Team work</div>
+</div>
+ <div class="redial-bar">
+<svg x="0px" y="0px" viewBox="0 0 200 200">
+<circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+  <circle class="path-bar-1" cx="100" cy="100" r="80"></circle></svg>
+   
+
+<div class="percentage">90%</div>
+<div class="text">creativity</div>
+</div> 
+</div>
+  </div>
+<!--circle--> 
+</section>
+<!--praktikal sikillllllllllllllllllllll-->
+
+
+
+
+
+
+
+  
+
+
+
+<!--html css js....logo-->
+  <!--skill-->
+
+<div class="container1" id="Skills">
+
+<h1 class="pract-heading">practical skill</h1>
+
+<div class="Technical-bars">
+
+
+  <!--same-->
+  <div class="bar">
+    
+
+<div class="info">
+
+<span>Free fire(pro)</span>
+
+</div>
+<div id="ff">90%</div>
+<div class="progress-line ff">
+
+<span></span>
+
+</div>
+
+</div> 
+<!--same-->
+  <!--same-->
+  <div class="bar">
+    
+
+<div class="info">
+
+<span>chess(district champion)</span>
+
+</div>
+<div id="ch">100%</div>
+<div class="progress-line ch">
+
+<span></span>
+
+</div>
+
+</div> 
+  <!--same-->
+  <div class="bar">
+    
+
+<div class="info">
+
+<span>Football (expart)</span>
+
+</div>
+<div id="fb">80%</div>
+<div class="progress-line fb">
+
+<span></span>
+
+</div>
+
+</div> 
+  <!--same-->
+  <div class="bar">
+    
+
+<div class="info">
+
+<span>Badminton (expart)</span>
+
+</div>
+<div id="js">85%</div>
+<div class="progress-line bm">
+
+<span></span>
+
+</div>
+
+</div> 
+
+<!--same-->
+  <div class="bar">
+    
+
+<div class="info">
+
+<span>Cricket</span>
+
+</div>
+<div id="ck">32%</div>
+<div class="progress-line ck">
+
+<span></span>
+
+</div>
+
+</div> 
+  <!--same-->
+  <div class="bar">
+<div class="info">
+
+<span>Fight(None;)</span>
+
+</div>
+<div id="fight">70%</div>
+<div class="progress-line fight">
+
+<span></span>
+
+</div>
+
+</div> 
+  <br /><br /><br /><br />
+<h1 class="pract-heading">
+   Subject
+</h1>
+
+
+  <div class="bar">
+<div class="info">
+
+<span>Math</span>
+
+</div>
+<div id="math">90%</div>
+<div class="progress-line math">
+
+<span></span>
+
+</div>
+
+</div> 
+ <div class="bar">
+<div class="info">
+
+<span>science</span>
+
+</div>
+<div id="science">95%</div>
+<div class="progress-line science">
+
+<span></span>
+
+</div>
+
+</div> 
+ <div class="bar">
+<div class="info">
+
+<span>ICT</span>
+
+</div>
+<div id="ict">100%</div>
+<div class="progress-line ict">
+
+<span></span>
+
+</div>
+
+</div> 
+  <div class="bar">
+<div class="info">
+
+<span>Other</span>
+
+</div>
+<div id="other">75%-80%</div>
+<div class="progress-line other">
+
+<span></span>
+
+</div>
+
+</div> 
+</div> 
+ 
+ 
+  
+<br /><br /><br /><br /><br />
+  
+  <!--xndndndbbdbdbdbsjsjsksksbdb-->
+  
+
+</div> 
+  
+ <!--html css js....logo-->
+  <!--skill-->
+
+ 
+
+
+  
+</div>
+
+</div</section>
+
+
+
+
+  <div id="ggg">
+     
+  </div>
+  <div id="aaa">
+    <section class="contact" id="contact">
+
+<div class="contact-text">
+
+<h2>Contact <span>Me</span></h2>
+
+<h4>Let's work Together</h4>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitatione erferendis odio vel laboriosam consequuntur dolores autem repellat na<p>
+
+<div class="contact-list">
+
+<li><i class='bx bxs-send'></i>contact@gmail.com</li>
+
+<li><i class='bx bxs-phone' ></i>0123456789</li>
+
+</div>
+
+<div class="contact-icons">
+
+<a href=""><i class='bx bxl-facebook-circle"></i></a>
+
+<a href=""><i class='bx bxl-twitter'></i></a>
+
+<a href=""><i class='bx bxl-instagram'></i></a>
+
+<a href=""><i class='bx bxl-linkedin'></i></a>
+
+</div>
+
+</div>
+<br />
+<div class="contact-form">
+
+<form action="">
+
+<input type="" placeholder="Enter Your Name" required>
+
+<input type="email" placeholder="Enter Your Email" required>
+  
+<input type="email" placeholder="Enter Your phone number" required>
+  <input type="" placeholder="Enter Your Subject">
+
+
+
+
+
+
+
+</form>
+
+</div>
+
+    </section>
+       </div>
+  <div class="ttt">
+     
+  </div>
+  
+  <a href="#" class="btn-last" onclick ="alert('Box is Submitted')">Submit Form</a>  
+  </div>
+  <div class="ttt"> 
+  </div>
+  <div class="last-page">
+     
+  
+  
+  <i class="bx bxl-facebook"></i>
+  <i class="bx bxl-instagram"></i>
+  <i class="bx bxl-whatsapp"></i>
+  <i class="bx bxl-tiktok"></i>
+    </div>
+  
+  
+  
+    
+  <!--Setup and start animation! -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!--Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: [' Student of Class 9 .', '&amp; Web Developer.',' Web Designer '],
+      typeSpeed: 100,
+    }); 
+  </script>
+</body>
+</html>
